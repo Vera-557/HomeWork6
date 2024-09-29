@@ -3,7 +3,7 @@ package KrNol;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Game {
+ class Game {
 
     static final int SIZE = 3;
     static char[][] pole;

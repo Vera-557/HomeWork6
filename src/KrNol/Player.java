@@ -2,7 +2,7 @@ package KrNol;
 
 import java.util.Scanner;
 
-public class Player {
+ class Player {
     String namePlayer;
     public void playerName(){
         System.out.println("Введите ваше имя");

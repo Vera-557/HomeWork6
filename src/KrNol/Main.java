@@ -16,6 +16,6 @@ public class Main {
         answer = new Scanner(System.in).nextInt();
         if (answer == 1){
             Game q = new Game();
-        }else System.out.println("*** До свидания ***");
+        }
     }
 }
