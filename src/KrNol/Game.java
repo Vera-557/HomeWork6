@@ -1,17 +1,24 @@
 package KrNol;
 
-import java.util.Random;
 import java.util.Scanner;
 
  class Game {
-
+     static int answer;
     static final int SIZE = 3;
     static char[][] pole;
     static final char X = 'X';
     static final char O = '0';
     static final char EMPTY = '-';
     static Scanner scanner = new Scanner(System.in);
-
+     public static void main(String[] args) {
+         Player p = new Player();
+         Game h = new Game();
+         p.playAgain();
+         answer = new Scanner(System.in).nextInt();
+         if (answer == 1){
+             Game q = new Game();
+         }
+     }
         public static void map(){
         System.out.println("Игровое поле");
         pole = new char[SIZE][SIZE];

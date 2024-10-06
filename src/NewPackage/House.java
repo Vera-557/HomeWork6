@@ -1,10 +1,10 @@
 package NewPackage;
 
-public class House {
+ class House {
     String address;
     int constructionYear;
 
-    public House(String address, int constructionYear) {
+     House(String address, int constructionYear) {
         this.address = address;
         this.constructionYear = constructionYear;
     }

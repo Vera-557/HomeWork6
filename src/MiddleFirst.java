@@ -5,63 +5,52 @@
 Введите первый аргумент: 10
 Введите второй аргумент: 15
 Результат: 25 */
+
 import java.util.Scanner;
+
 public class MiddleFirst {
-    static int a;
-    static int b;
-    static char c;
-    static int result;
+
     public static void main(String[] args) {
+
         System.out.println("Калькулятор");
         System.out.println("Выберите действие");
-        c = new Scanner(System.in).next().charAt(0);
+        char c = new Scanner(System.in).next().charAt(0);
         System.out.println("Введите первый аргумент");
-        a = new Scanner(System.in).nextInt();
+         int a = new Scanner(System.in).nextInt();
         System.out.println("Введите второй аргумент");
-        b = new Scanner(System.in).nextInt();
-        switch(c){
-            case '+': sum(a,b);
-            System.out.println("Результат = " + result);
-            break;
-            case '-': difference(a,b);
-                System.out.println("Результат = " + result);
+         int b = new Scanner(System.in).nextInt();
+        switch (c) {
+            case '+':
+                sum(a,b);
                 break;
-            case '*': multiply(a,b);
-                System.out.println("Результат = " + result);
+            case '-':
+                difference(a,b);
                 break;
-            case '/': divide(a,b);
-                System.out.println("Результат = " + result);
+            case '*':
+                multiply(a,b);
+                break;
+            case '/':
+                divide(a,b);
                 break;
         }
-
-
     }
 
-    public static int sum(int a, int b) {
-        MiddleFirst.a = a;
-        MiddleFirst.b = b;
-        MiddleFirst.result = a + b;
-        return result;
+    private static void sum(int a, int b) {
+        int result = a + b;
+        System.out.println("Результат = " + result);
+    }
+    private static void difference(int a, int b) {
+        int result = a - b;
+        System.out.println("Результат = " + result);
+    }
+    private static void multiply(int a, int b) {
+        int result = a * b;
+        System.out.println("Результат = " + result);
+    }
+    private static void divide(int a, int b) {
+        int result = a / b;
+        System.out.println("Результат = " + result);
     }
 
-    public static int difference(int a, int b) {
-        MiddleFirst.a = a;
-        MiddleFirst.b = b;
-        MiddleFirst.result = a - b;
-        return result;
-    }
 
-    public static int multiply(int a, int b) {
-        MiddleFirst.a = a;
-        MiddleFirst.b = b;
-        MiddleFirst.result = a * b;
-        return result;
-    }
-
-    public static int divide(int a, int b) {
-        MiddleFirst.a = a;
-        MiddleFirst.b = b;
-        MiddleFirst.result = a / b;
-        return result;
-    }
 }
