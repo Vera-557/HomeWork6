@@ -16,21 +16,21 @@ public class MiddleFirst {
         System.out.println("Выберите действие");
         char c = new Scanner(System.in).next().charAt(0);
         System.out.println("Введите первый аргумент");
-         int a = new Scanner(System.in).nextInt();
+        int a = new Scanner(System.in).nextInt();
         System.out.println("Введите второй аргумент");
-         int b = new Scanner(System.in).nextInt();
+        int b = new Scanner(System.in).nextInt();
         switch (c) {
             case '+':
-                sum(a,b);
+                sum(a, b);
                 break;
             case '-':
-                difference(a,b);
+                difference(a, b);
                 break;
             case '*':
-                multiply(a,b);
+                multiply(a, b);
                 break;
             case '/':
-                divide(a,b);
+                divide(a, b);
                 break;
         }
     }
@@ -39,14 +39,17 @@ public class MiddleFirst {
         int result = a + b;
         System.out.println("Результат = " + result);
     }
+
     private static void difference(int a, int b) {
         int result = a - b;
         System.out.println("Результат = " + result);
     }
+
     private static void multiply(int a, int b) {
         int result = a * b;
         System.out.println("Результат = " + result);
     }
+
     private static void divide(int a, int b) {
         int result = a / b;
         System.out.println("Результат = " + result);
