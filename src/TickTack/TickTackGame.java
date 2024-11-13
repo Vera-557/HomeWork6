@@ -11,6 +11,8 @@ public class TickTackGame {
         static char EMPTY = '1';
         static Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
+            Player player = new Player();
+            player.playerName();
             map();
             printMap();
             while (true) {

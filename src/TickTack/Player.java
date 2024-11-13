@@ -9,10 +9,7 @@ class Player {
         namePlayer = new Scanner(System.in).next().trim();
        System.out.println("Здравствуйте " + namePlayer + ", давайте сыграем");
    }
-         public void playAgain(){
-       System.out.println(namePlayer + "хотите сыграть еще раз?");
-             System.out.println(" да - 1");
-         }
+
 
    public Player() {
        playerName();
