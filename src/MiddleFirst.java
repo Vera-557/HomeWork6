@@ -50,7 +50,11 @@ public class MiddleFirst {
         System.out.println("Результат = " + result);
     }
 
-    private static void divide(int a, int b) {
+   private static void divide(int a, int b) {
+        if (b == 0) {
+            System.out.println("Деление на ноль невозможно");
+            return;
+        }
         int result = a / b;
         System.out.println("Результат = " + result);
     }
